@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Search Mandarake for Homura figure",
+  "description": "This extension is a test script that periodically search Homura ichiban-kuji figure on Mandarake",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "mandarake_icon.jpg",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "notifications",
+    "tabs",
+    "background",
+    "https://ajax.googleapis.com/",
+    "https://order.mandarake.co.jp/"
+  ],
+  "background": {
+    "page": "background.html"
+  }
+}
